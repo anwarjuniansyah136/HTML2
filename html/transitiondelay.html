@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 900px;
+            margin: 10px auto;
+            border: 2px solid black;
+        }
+        .container:hover .kotak{
+            transform: rotate(720deg);
+            background-color: skyblue;
+            margin-left: 800px;
+        }
+        .kotak{
+            width: 100px;
+            height: 100px;
+            background-color: salmon;
+            transition: margin-left      3s                                        5s,transform 3s 2s,background-color 3s 2s;
+            /*  yg mau di jalankan      lama waktu agar dia sampai ke tujuan        setelah berapa lama dia berubah*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="kotak"></div>
+    </div>
+</body>
+</html>

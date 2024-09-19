@@ -1,0 +1,149 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+} 
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+  
+ol, ul {
+    list-style: none;
+}
+  
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body{
+    font: 16px/28px arial, sans-serif;
+    background-color: #eaeaea;
+    color: #333;
+}
+.topbar{
+    position: fixed;
+    background-color: #333aa3;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 50px;
+    border-bottom: 5px solid salmon;
+    z-index: 99999;
+}
+.container{
+    width: 960px;
+    margin: 80px auto;
+    background-color: white;
+    position: relative;
+}
+.twitter{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-image: url(reborn.png);
+    text-indent: -9999px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.header{
+    padding: 20px;
+}
+.header .judul{
+    padding: 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.header ul li{
+    display: inline;
+    margin-top: 20px;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+a{
+    text-decoration: none;
+    color: salmon;
+    padding: 5px;
+}
+.header ul li a :hover{
+    background-color: skyblue;
+    color: white;
+}
+.hero{
+    height: 400px;
+    background-image: url(buah.jpg);
+    background-size: 0 -100px;
+    border-bottom: 5px solid lightskyblue;
+    border-top: 5px solid salmon;
+}
+.main{
+    width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: justify;
+    float: left;
+}
+.main h2{
+    font-size: 28px;
+    font-weight: bold;
+}
+.main .penulis{
+    font-size: 11px;
+    margin-top: -5px;
+}
+.main p{
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.main a{
+    color: salmon;
+    text-decoration: none;
+}
+.footer{
+    background-color: #333;
+    padding: 20px;
+}
+.footer .copy{
+    color: #eaeaea;
+    text-align: center;
+    font-size: 12px;
+}
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+.sidebar img{
+    width: 70px;
+    height: auto;
+    float: left;
+    padding-right: 10px;
+}
+.sidebar{
+    width: 300px;
+    float: right;
+    padding: 20px;
+}
+.sidebar h3{
+    color: #333;
+    font-weight: bold;
+    font-size: 15px;
+}
+.sidebar p{
+    color: #333;
+    line-height: 15px;
+    font-size: 12px;
+}

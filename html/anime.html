@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime</title>
+    <style>
+        .logo{
+            background-color: aqua;
+            margin: 0px;
+            height: auto;
+            /* box-shadow: 0px 0px 20px 0px black; */
+        }
+        .picture{
+            height: 30px;
+            width: auto;
+        }
+        .gambar{
+            background-color: black;
+            width: 30px;
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }
+        .ukuran2{
+            background-color: antiquewhite;
+            height: 30cm;
+            margin: auto;
+        }
+        .ukuran3{
+            background-color: blue;
+            height: 25cm;
+            width: 22cm;
+            margin: auto;
+        }
+        .ukuran4{
+            background-color: black;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            height: 70px;
+        }
+        .ukuran5{
+            display: flex;
+            justify-content: center;
+            margin-left: 100px;
+            margin-right: 50px;
+            flex-direction: column;
+            margin-bottom: 2px;
+        }
+        .ukuran2_1{
+            padding: 10px;
+            background-color: brown;
+            display: flex;
+            justify-content: center;
+        }
+        .inp{
+            width: 600px;
+            height: 30px;
+            border: 1px solid #ccd0d5;
+            border-radius: 10px;
+        }
+        .tekan{
+            width: 80px;
+            height: 35px;
+            border: 1px solid #ccd0d5;
+            border-end-end-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .pencet1{
+            width: 580px;
+        }
+        .bungkus{
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #ccd0d5;
+            border-radius: 5px;
+            margin: 5px;
+        }
+        .kanan{
+            width: 600px;
+            height: 20cm;
+            border: 1px solid #ccd0d5;
+            border-radius: 5px;
+            margin: 10px;
+            background-color: aqua;
+        }
+        .kiri{
+            width: 300px;
+            height: 10cm;            
+            border: 1px solid #ccd0d5;
+            border-radius: 5px;
+            margin: 10px;
+            background-color: aqua;
+        }
+        .title{
+            padding: 10px;
+            background-color: antiquewhite;
+        }
+        .pilihan{
+            padding: 0px;
+            background-color: azure;
+        }
+        .gambaranime{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: aquamarine;
+        }
+        .animee{
+            display: flex;
+            text-align: center;   
+        }
+        .gambar2{
+            height: 130px;
+            width: auto;
+        }
+        .animee p, .animee span{
+            position: absolute;
+            font-size: 12px;
+            text-align: justify;
+        }
+        .animee p{
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-self: self-end;
+            padding-left: 2px;
+            text-align-last: 0px;
+            text-shadow: -1px -1px 5px #000, 1px -1px 5px #000, -1px 1px 5px #000, 0 3px 2px #000;
+            /* border-bottom: .25rem solid #168CCC!important; */
+        }
+        .animee span{
+            overflow: hidden;
+            background-color: #279ddd;
+            color: #fff;
+            padding: 3px 10px;
+        }
+        body{
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="https://185.224.82.193/logos.png" alt="anime indo" class="picture">
+    </div>
+    <div class="ukuran2">
+        <div class="ukuran3">
+            <div class="ukuran4">
+                <table>
+                    <td>
+                        <a href="https://185.224.82.193/anime-list/">
+                            <div class="ukuran5">
+                                <img src="https://185.224.82.193/list.png" alt="" class="gambar">
+                                List
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://185.224.82.193/list-genre/">
+                            <div class="ukuran5">
+                                <img src="https://185.224.82.193/tv.png" alt="" class="gambar">
+                                genre
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://185.224.82.193/movie/">
+                            <div class="ukuran5">
+                                <img src="https://185.224.82.193/video.png" alt="" class="gambar">
+                                movie
+                            </div>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://185.224.82.193/jadwal/">
+                            <div class="ukuran5">
+                                <img src="https://185.224.82.193/jadwal.png" alt="" class="gambar">
+                                jadwal
+                            </div>
+                        </a>
+                    </td>
+                </table>
+            </div>
+            <div class="ukuran2_1">
+                <div class="pencet1">
+                    <input type="text" class="inp">
+                </div>
+                <div>
+                    <input type="submit" value="search" class="tekan">
+                </div>
+            </div>
+            <div class="bungkus">
+                <div class="kanan">
+                    <div class="title">Update Terbaru</div>
+                    <div class="pilihan">
+                        <div class="gambaranime">
+                            <a href="https://185.224.82.193/niehime-to-kemono-no-ou-episode-8/">
+                                <div class="animee">
+                                    <img src="https://185.224.82.193/img/127227l.jpg" alt="" class="gambar2">
+                                    <p><b>Niehime to<br>komono no Ou</b></p>
+                                    <span>8</span>
+                                </div>
+                            </a>
+                            <a href="https://185.224.82.193/kaminaki-sekai-no-kamisama-katsudou-episode-9/">
+                                <div class="animee">
+                                    <img src="https://185.224.82.193/img/134647l.jpg" alt="" class="gambar2">
+                                    <p><b>kaminaki sekai<br>no kamisama<br>katsudou</b></p>
+                                    <span>9</span>
+                                </div>
+                            </a>
+                            <a href="https://185.224.82.193/kono-subarashii-sekai-ni-bakuen-wo-episode-10/">
+                                <div class="animee">
+                                    <img src="https://185.224.82.193/img/124133l.jpg" alt="" class="gambar2">
+                                    <p><b>kono subarashii<br>sekai ni bakuen<br>wo!</b></p>
+                                    <span>10</span>
+                                </div>
+                            </a>
+                            <a href="https://185.224.82.193/oshi-no-ko-episode-8/">
+                                <div class="animee">
+                                    <img src="https://185.224.82.193/img/131774l.jpg" alt="" class="gambar2">
+                                    <p><b>Oshi no ko</b></p>
+                                    <span>8</span>
+                                </div>
+                            </a>
+                            <a href="https://185.224.82.193/the-marginal-service-episode-9/">
+                                <div class="animee">
+                                    <img src="https://185.224.82.193/img/131998l.jpg" alt="" class="gambar2">
+                                    <p><b>The Marginal<br>service</b></p>
+                                    <span>9</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="gambaranime">
+                            <a href="https://185.224.82.193/majutsushi-orphen-hagure-tabi-seiiki-hen-episode-9/">
+                                <div class="animee">
+                                    <img src="https://185.224.82.193/img/135105l.jpg" alt="" class="gambar2">
+                                    <p><b>Hagure Tabi:<br>Seiiki-hen</b></p>
+                                    <span>9</span>
+                                </div>
+                            </a>
+                            <a href="https://185.224.82.193/kubo-san-wa-mob-wo-yurusanai-episode-10/">
+                                <div class="animee">
+                                    <img src="https://185.224.82.193/img/132330l.jpg" alt="" class="gambar2">
+                                    <p><b>kubo san wa mob<br>wo yurusanai</b></p>
+                                    <span>10</span>
+                                </div>
+                            </a>
+                            <a href="https://185.224.82.193/skip-to-loafer-episode-10/">
+                                <div class="animee">
+                                    <img src="https://185.224.82.193/img/133785l.jpg" alt="" class="gambar2">
+                                    <p><b>skip to loafer</b></p>
+                                    <span>10</span>
+                                </div>
+                            </a>
+                            <a href="https://185.224.82.193/tokyo-mew-mew-new-%e2%99%a1-2nd-season-episode-10/">
+                                <div class="animee">
+                                    <img src="https://185.224.82.193/img/133807l.jpg" alt="" class="gambar2">
+                                    <p><b>tokyo mew mew <br> season 2</b> </p>
+                                    <span>10</span>
+                                </div>
+                            </a>
+                            <a href="https://185.224.82.193/kizuna-no-allele-episode-10/">
+                                <div class="animee">
+                                    <img src="https://185.224.82.193/img/133752l.jpg" alt="" class="gambar2">
+                                    <p><b>kizuna no allele</b></p>
+                                    <span>10</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="gambaranime">
+                            <a href="https://185.224.82.193/vinland-saga-season-2-episode-22/">
+                                <div class="animee">
+                                    <img src="https://185.224.82.193/img/124312l.jpg" alt="" class="gambar2">
+                                    <p><b>vinland saga<br>season 2</b></p>
+                                    <span>22</span>
+                                </div>
+                            </a>
+                            <a href="https://185.224.82.193/watashi-no-yuri-wa-oshigoto-desu-episode-10/">
+                                <div class="animee">
+                                    <img src="https://185.224.82.193/img/132065l.jpg" alt="" class="gambar2">
+                                    <p><b>watashi no yuri<br>wa oshigoto desu</b></p>
+                                    <span>10</span>
+                                </div>
+                            </a>
+                            <a href="https://185.224.82.193/kimi-wa-houkago-insomnia-episode-9/">
+                                <div class="animee">
+                                    <img src="https://185.224.82.193/img/124335l.jpg" alt="" class="gambar2">
+                                    <p><b>kimi wa houkago <br> insomnia</b></p>
+                                    <span>9</span>
+                                </div>
+                            </a>
+                            <a href="https://185.224.82.193/isekai-wa-smartphone-to-tomo-ni-2-episode-10/">
+                                <div class="animee">
+                                    <img src="https://185.224.82.193/img/125644l.jpg" alt="" class="gambar2">
+                                    <p><b>isekai wa <br> smartphone to <br> tomo ni 2</b></p>
+                                    <span>10</span>
+                                </div>
+                            </a>
+                            <a href="https://185.224.82.193/dead-mount-death-play-episode-9/">
+                                <div class="animee">
+                                    <img src="https://185.224.82.193/img/133758l.jpg" alt="" class="gambar2">
+                                    <p><b>dead mount <br> death play</b></p>
+                                    <span>9</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="gambaranime">
+                            <a href="https://185.224.82.193/dr-stone-new-world-episode-10/">
+                                <div class="animee">
+                                    <img src="https://185.224.82.193/img/131775l.jpg" alt="" class="gambar2">
+                                    <p><b>dr stone new <br> world</b> </p>
+                                    <span>10</span>
+                                </div>
+                            </a>
+                            <a href="https://185.224.82.193/kanojo-ga-koushaku-tei-ni-itta-riyuu-episode-9/">
+                                <div class="animee">
+                                    <img src="https://185.224.82.193/img/130452l.jpg" alt="" class="gambar2">
+                                    <p><b>kanojo ga <br> koushaku tei ni <br> itta riyuu</b> </p>
+                                    <span>9</span>
+                                </div>
+                            </a>
+                            <a href="https://185.224.82.193/ao-no-orchestra-episode-9/">
+                                <div class="animee">
+                                    <img src="https://185.224.82.193/img/133754l.jpg" alt="" class="gambar2">
+                                    <p><b>ao no orchestra</b> </p>
+                                    <span>9</span>
+                                </div>
+                            </a>
+                            <a href="https://185.224.82.193/world-dai-star-episode-9/">
+                                <div class="animee">
+                                    <img src="https://185.224.82.193/img/135069l.jpg" alt="" class="gambar2">
+                                    <p><b>world dai star</b> </p>
+                                    <span>9</span>
+                                </div>
+                            </a>
+                            <a href="https://185.224.82.193/kimetsu-no-yaiba-katanakaji-no-sato-hen-episode-9/">
+                                <div class="animee">
+                                    <img src="https://185.224.82.193/img/135099l.jpg" alt="" class="gambar2">
+                                    <p><b>kimetsu no yaiba <br> katanakaji no <br> sato hen</b> </p>
+                                    <span>9</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="kiri">
+                    <div class="title">Popular</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

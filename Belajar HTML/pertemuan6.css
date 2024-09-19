@@ -1,0 +1,11 @@
+p{
+    /* text-align: left; */
+    direction: rtl;
+}
+.linethrough{
+    text-decoration: line-through wavy green;
+}
+h1{
+    color: aqua;
+    text-shadow: 1px 3px 0 px rgb(195, 102, 102);
+}

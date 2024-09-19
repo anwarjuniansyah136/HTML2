@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    /* overflow-x: hidden; */
+}
+nav{
+    display: flex;
+    background-color: rgb(180,78,232);
+    justify-content: space-around;
+    /* padding: 20px 0; */
+    color: rgb(234,192,255);
+    height: 50px;
+    align-items: center;
+}
+
+nav .logo{
+    font-family: 'Pacifito',cursive;
+    letter-spacing: 3px;
+}
+ul{
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(234,192,255);
+    font-size: 0.8em;
+}
+nav ul li a:hover{
+    color: rgrb(250,240,255);
+}
+
+/* Hu,burger menu */
+.menu-toggle input{
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    opacity: 0;
+    left: -5px;
+    top: -3px;
+    cursor: pointer;
+}
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    /* background-color: black; */
+    position: relative;
+}
+
+.menu-toggle span{
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: rgb(234,192,255);
+    border-radius: 3px;
+    transition: all 0.5s;
+    z-index: 2;
+}
+
+/* Humburger Menu Animation
+.menu-toggle span:nth-child(2){
+    background-color: red; */
+/* } */
+.menu-toggle input:checked ~ span:nth-child(2){
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:last-child{
+    transform-origin: 0 0;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2){
+    transform: rotate(45deg) translate(1.4px,-2px);
+    background-color: white;
+}
+
+.menu-toggle input:checked ~ span:nth-child(4){
+    transform: rotate(-45deg) translate(0px,1px);
+    background-color: white;
+}
+
+.menu-toggle input:checked ~ span:nth-child(3){
+    transform: scale(0); 
+    opacity: 0;
+}
+
+/* responsive */
+/* ukuran tablet */
+@media screen and (max-width: 768px){
+    nav ul{
+        width: 50%;
+    }
+}
+/* ukuran mobile */
+@media screen and (max-width: 576px){
+    nav ul{
+        position: absolute;
+        right: 0;
+        flex-direction: column;
+        background-color: black;
+        justify-content: space-evenly;
+        height: 100vh;
+        top: 10px;
+        align-items: center;
+        z-index: -1;
+        background-color: rgb(180,78,232);
+        width: 80%;
+        transform: translateX(100%);
+        transition: all 1s;
+        /* opacity: 0; */
+    }
+    .menu-toggle{
+        display: flex;
+    }
+    nav ul .slide{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

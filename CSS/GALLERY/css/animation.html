@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kotak{
+            width: 120px;
+            height: 120px;
+            background-color: aqua;
+            animation : animasi 2s ease infinite alternate;
+        }
+        @keyframes animasi{
+            from {
+                width: 120px;
+                height: 120px;
+                transform: rotate(720deg);
+            }
+            to{
+                width: 200px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="kotak"></div>
+</body>
+</html>

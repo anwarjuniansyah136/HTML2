@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(203, 221, 240);
+        }
+        #img{
+            height: 100px;
+        }
+        .tampilan{
+            display: flex;
+            gap: 100px;
+            height: 700px;
+            align-items: center;
+            justify-content: center;
+        }
+        #form{
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            width: 350px;
+            height: 300px;
+            justify-content: center;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px whitesmoke;
+        }
+        .inp{
+            width: 300px;
+            height: 40px;
+            border-radius: 4px;
+        }
+        #ins{
+            background-color: blue;
+            font-size: 20px;
+        }
+        #create{
+            background-color: green;
+            width: 150px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="tampilan">
+        <section>
+            <img id ="img" src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook">
+            <p>Facebook helps you connect and <br>share with the people in your life</p>
+        </section>
+        <section id="form">
+            <input class="inp" type="text" placeholder="Email address or phone number" id="email">
+            <input class="inp" type="password" placeholder="Password">
+            <button class="inp" id="ins" style="color: white;">Log in</button>
+            <a href="">Forgotten password?</a>
+            <a href="createaccount.html"><button class="inp" id="create">Create new account</button></a>
+        </section>
+    </div>
+</body>
+</html>
